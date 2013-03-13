@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditCommandActivity" >
+
+    <EditText
+        android:id="@+id/command_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Title" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/command_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Description" />
+
+    <EditText
+        android:id="@+id/command_commands"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="Enter Commands"
+        android:inputType="textMultiLine|textCapCharacters|textNoSuggestions" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right" >
+
+        <Button
+            android:id="@+id/command_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/command_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel" />
+    </LinearLayout>
+
+</LinearLayout>
